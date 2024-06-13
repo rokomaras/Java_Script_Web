@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+form {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+}

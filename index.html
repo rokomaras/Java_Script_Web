@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Završni projekt - Web forma</title>
+    <link id="css_indexID" rel="stylesheet" href="style2.css">
+</head>
+<body>
+<h1>Web Forma</h1>
+<form id="mainForm">
+    <label for="text1">Ime:</label>
+    <input type="text" id="text1" name="text1" required><br><br>
+
+    <label for="text2">Prezime:</label>
+    <input type="text" id="text2" name="text2" required><br><br>
+
+    <label for="combobox">Izaberite grad:</label>
+    <select id="combobox" name="combobox" required>
+        <option value="" disabled selected>Izaberite...</option>
+        <option value="Zadar">Zadar</option>
+        <option value="Zagreb">Zagreb</option>
+        <option value="Split">Split</option>
+    </select><br><br>
+
+    <label>Select program:</label><br>
+    <input type="checkbox" id="checkbox1" name="checkbox" value="Program 1"> Opcija 1<br>
+    <input type="checkbox" id="checkbox2" name="checkbox" value="Program 2"> Opcija 2<br>
+    <input type="checkbox" id="checkbox3" name="checkbox" value="Program 3"> Opcija 3<br><br>
+
+    <label>Select service:</label><br>
+    <input type="radio" id="radio1" name="radio" value="Service 1" required>Service 1<br>
+    <input type="radio" id="radio2" name="radio" value="Service 2">Service 2<br>
+    <input type="radio" id="radio3" name="radio" value="Service 3">Service 3<br><br>
+
+    <button type="button" onclick="submitData()">Send data</button>
+</form>
+
+<div id="output"></div>
+<div id="button_part"></div>
+
+<button type="button" onclick="resetForm()">Reset</button>
+
+<script src="script.js"></script>
+</body>
+</html>
